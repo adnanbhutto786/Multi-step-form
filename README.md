@@ -67,7 +67,7 @@ Adnan Ali Bhutto
 
 GitHub: adnanbhutto786
 
-LinkedIn: [Your LinkedIn URL]
+LinkedIn: [https://www.linkedin.com/in/adnan-ali-bhutto-246843247/]
 
 📄 License
 
