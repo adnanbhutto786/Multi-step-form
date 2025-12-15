@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Multi-Step Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="multi-step-form">
+
+      <!-- Progress Bar -->
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+        <div class="step active" data-step="1">1</div>
+        <div class="step" data-step="2">2</div>
+        <div class="step" data-step="3">3</div>
+        <div class="step" data-step="4">4</div>
+      </div>
+
+      <!-- Step 1: Personal Info -->
+      <div class="form-step active">
+        <h2>Personal Information</h2>
+        <input type="text" name="firstName" placeholder="First Name *" required>
+        <input type="text" name="lastName" placeholder="Last Name *" required>
+        <input type="email" name="email" placeholder="Email Address *" required>
+        <input type="tel" name="phone" placeholder="Phone Number">
+        <div class="buttons">
+          <button type="button" class="next-btn">Next</button>
+        </div>
+      </div>
+
+      <!-- Step 2: Address -->
+      <div class="form-step">
+        <h2>Address Information</h2>
+        <input type="text" name="address" placeholder="Street Address *" required>
+        <input type="text" name="city" placeholder="City *" required>
+        <input type="text" name="state" placeholder="State/Province *" required>
+        <input type="text" name="zip" placeholder="Zip/Postal Code *" required>
+        <div class="buttons">
+          <button type="button" class="prev-btn">Back</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+      </div>
+
+      <!-- Step 3: Additional Info -->
+      <div class="form-step">
+        <h2>Additional Information</h2>
+        <input type="text" name="occupation" placeholder="Occupation">
+        <select name="interests">
+          <option value="">Select Interests</option>
+          <option value="technology">Technology</option>
+          <option value="sports">Sports</option>
+          <option value="arts">Arts</option>
+          <option value="science">Science</option>
+          <option value="other">Other</option>
+        </select>
+        <textarea name="message" placeholder="Additional Comments"></textarea>
+        <div class="buttons">
+          <button type="button" class="prev-btn">Back</button>
+          <button type="button" class="next-btn">Next</button>
+        </div>
+      </div>
+
+      <!-- Step 4: Summary -->
+      <div class="form-step">
+        <h2>Summary</h2>
+        <div id="summary-container"></div>
+        <div class="buttons">
+          <button type="button" class="prev-btn">Back</button>
+          <button type="button" class="submit-btn">Submit</button>
+        </div>
+      </div>
+
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
